@@ -15,11 +15,8 @@ export const databaseConfig = registerAs('database', () => {
     synchronize: process.env.DATABASE_SYNCHRONIZE === 'true',
     logging: process.env.DATABASE_LOGGING === 'true',
     ssl: process.env.DATABASE_SSL === 'true',
-    entities: ['src/**/*.entity.ts', 'dist/**/*.entity.js'],
-    migrations: [
-      'src/database/migrations/*.ts',
-      'dist/database/migrations/*.js',
-    ],
+    entities: ['dist/**/*.entity.js'],
+    migrations: ['dist/database/migrations/*.js'],
     namingStrategy: new SnakeNamingStrategy(),
     autoLoadEntities: true,
   } as PostgresConnectionOptions & TypeOrmModuleOptions;
