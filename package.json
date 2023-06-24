@@ -39,6 +39,8 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
+    "@jorgebodega/typeorm-factory": "^1.4.0",
+    "@jorgebodega/typeorm-seeding": "^6.0.1",
     "@nestjs/cli": "^9.5.0",
     "@nestjs/schematics": "^9.2.0",
     "@nestjs/testing": "^9.4.3",
