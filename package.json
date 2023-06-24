@@ -22,6 +22,7 @@
     "migration:run": "npm run typeorm migration:run -- -d ./src/data-source.ts",
     "migration:generate": "npm run typeorm migration:generate -- -d ./src/data-source.ts",
     "migration:revert": "npm run typeorm migration:revert -- -d ./src/data-source.ts",
+    "seed:run": "ts-node -r tsconfig-paths/register ./node_modules/@jorgebodega/typeorm-seeding/dist/cli.js -d ./src/data-source.ts ./src/database/seeders/*.ts",
     "prepare": "husky install"
   },
   "dependencies": {
